@@ -54,6 +54,24 @@ header {
 }
 
 
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center; /* Center align nav items */
+  }
+  
+  .nav-links {
+    width: 70%; /* Take up full width */
+    align-items: center; /* Center align text */
+  }
+  
+  .nav-links a {
+    display: block; /* Ensure nav links appear in block format */
+  }
+}
+
+
 /* hero section */
 
 .hero-section {
@@ -190,7 +208,7 @@ header {
 
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
-  /* Keep existing styles for .section-heading */
+
   .section-heading {
     font-size: 15px; /* Add new font size */
   }
@@ -375,11 +393,17 @@ header {
   }
 
   .portfolio-item p {
-    font-size: 1px; /* Reduce font size to 10px for smaller screens */
+    font-size: 10px;
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 10px;/* Reduce font size to 10px for smaller screens */
+    text-align: left;
+     margin-top: 5px;
+    padding-left: 10px;
+
   }
 }
-
-
 
 
 /* CSS for the random content */

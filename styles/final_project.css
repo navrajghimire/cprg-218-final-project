@@ -88,33 +88,86 @@ header {
 
 
 .hero-text h1 {
-  font-size: 35px;
+  font-size: 30px; 
   margin-bottom: 0.0px;
   margin-top: 0.0px;
 
 }
 
-
-/* Media query for smaller screens  */
-@media screen and (max-width: 768px) {
-  .hero-text  h1 {
-    font-size: 18px; 
-  }
-}
-
-
+/* Button styling */
 .button {
   font-family: "Quicksand", sans-serif, Arial, sans-serif; 
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 20px; 
   background-color: #525151;
   color: rgb(255, 238, 0);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 18px; 
   border-radius: 30px;
   transition: background-color 0.3s ease;
   border: none;
 }
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+
+
+  
+  /* Make nav links appear vertically */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+
+  .nav-links {
+    padding: 10px 0; 
+    margin: 0; 
+  }
+  
+
+  .nav-links a {
+    font-size: 16px; 
+  }
+  
+
+
+  .hero-section {
+    margin-top: 150px;    /* gap from top for index page */
+  }
+
+  
+  .hero-text h1 {
+    font-size: 12px; 
+  }
+  
+
+  .button {
+    padding: 5px 10px; 
+  }
+
+
+  .button {
+    font-size: 10px; 
+  }
+
+
+  .hero-text {
+    position: absolute;
+    top: 30%;
+    left: 00%;
+    color: #00d9ff;
+    border-radius: 20px;
+    max-width: 80%; 
+    padding: 10px; 
+    background-color: rgba(0, 0, 0, 0.85); 
+    font-family: "Quicksand", sans-serif, Arial, sans-serif; 
+  }
+
+  
+}
+
+
 
 
 .button:hover {
@@ -134,6 +187,17 @@ header {
 
 
 }
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  /* Keep existing styles for .section-heading */
+  .section-heading {
+    font-size: 15px; /* Add new font size */
+  }
+}
+
+
+
 
 .content-image img {
   width: 250px;
@@ -280,7 +344,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border: #00ccff;
+  color: #00d0ff;
 }
 
 .portfolio-item {
@@ -302,6 +366,20 @@ header {
   margin: 20px;
   padding: 20px;
 }
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+
+  .content-heading {
+    margin-top: 100px;       /* gap from top for portfolio page */
+  }
+
+  .portfolio-item p {
+    font-size: 1px; /* Reduce font size to 10px for smaller screens */
+  }
+}
+
+
 
 
 /* CSS for the random content */

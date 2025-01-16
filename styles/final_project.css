@@ -58,16 +58,16 @@ header {
 @media screen and (max-width: 600px) {
   .navbar {
     flex-wrap: wrap;
-    justify-content: center; /* Center align nav items */
+    justify-content: center;
   }
   
   .nav-links {
-    width: 70%; /* Take up full width */
-    align-items: center; /* Center align text */
+    width: 70%; 
+    align-items: center;
   }
   
   .nav-links a {
-    display: block; /* Ensure nav links appear in block format */
+    display: block;
   }
 }
 
